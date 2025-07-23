@@ -102,6 +102,21 @@ function CheckoutPage() {
             </div>
           </div>
 
+          {/* Easypaisa Payment Info */}
+          <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded shadow mb-6">
+            <p className="font-medium text-yellow-800">
+              💳 <strong>Send Payment First:</strong> Please send your payment to the following Easypaisa account:
+            </p>
+            <ul className="mt-2 text-sm text-yellow-700">
+              <li><strong>Account Number:</strong> 0334-8550313</li>
+              <li><strong>Account Holder:</strong> Danyal Waheed Qazi</li>
+            </ul>
+            <p className="mt-2 text-sm text-yellow-700">
+              After sending the payment, enter your Transaction ID below to complete your order.
+            </p>
+          </div>
+
+          {/* Order Form */}
           <form
             onSubmit={handleSubmit}
             className="bg-white p-4 rounded shadow space-y-4"
